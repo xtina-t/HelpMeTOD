@@ -1,0 +1,49 @@
+const today = new Date();
+let now = today.getHours(); //0-23
+let time;
+/*morning: 0300 - 1100
+*morning >= 0300 && morning < 11
+*afternoon 1100-1900
+*afternoon >= 11 && afternoon < 19
+*evening 1900 - 0300
+*evening >= 19 && evening < 3
+ */
+
+if (now >= 5 && now < 11) {
+  time = 'morning';
+} else if (now >= 11 && now < 17) {
+  time = 'afternoon';
+} else if (now >= 17 && now < 23) {
+  time = 'night';
+} else {
+  time = 'sleep';
+}
+
+//console.log(time);
+
+function greeting() {
+  if (time === 'morning') {
+    console.log('Good Morning!');
+    console.log('I love you!');
+    console.log("You're doing GREAT!");
+    console.log('Nice butt!');
+  } else if (time ==='afternoon') {
+    console.log('Good afternoon!');
+    console.log("You're a genius!");
+    console.log('Just keep swimming!');
+    console.log('Progress not perfection!');
+  } else if (time === 'night') {
+    console.log('Goodnight, Princess!');
+    console.log('Time for a nightcap.');
+    console.log ('Sleep tight!');
+    console.log ('Get NAKED!');
+  } else {
+    console.log('GO TF\' TO SLEEP');
+    console.log('GO TF\' TO SLEEP');
+    console.log('GO TF\' TO SLEEP');
+    console.log('GO TF\' TO SLEEP');
+  }
+}
+
+//greeting();
+//document.write('<h1>' + greeting() + '</h1>');
