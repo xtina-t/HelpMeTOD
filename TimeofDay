@@ -47,3 +47,6 @@ function greeting() {
 
 //greeting();
 //document.write('<h1>' + greeting() + '</h1>');
+
+/**why am I returning the propper greeting in javascript
+* returning undefied in HTML live server
